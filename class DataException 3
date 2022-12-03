@@ -1,0 +1,46 @@
+if (ano < 0)
+                    throw new DateException();
+                  
+                if(ano % 4 == 0) {
+                    this.dcs = true;
+                } 
+                else {
+                    this.ano = ano;
+                    this.finaldia[1] = 28;
+                    this.dcs = false;
+                }
+            }
+
+            public void setM(int M) throws DateException{
+                if (M < 1 || M >12)
+                    throw new DateException();
+                    this.M = M;
+            }
+          
+            public void setD(int D) throws DException, AnoException {
+                if (D >= 1 || D <= 31) {
+                    if (D <= finaldia[M-1]) {
+                        this.D = D;
+                    } 
+                    else if (D == 29 && dcs == true && M == 2){
+                        this.D = D;
+                        System.out.println "Ano Bissexto![D= "+ this.D +" , M= "+ this.M +" , ano= "+ this.ano +"]";
+                    } 
+                    else if (D == 29 && dcs == false && M == 2) {
+                        
+                        System.out.println 
+                        throw new AnoException();
+                    } 
+                    else {
+                        System.out.println"[D= "+ this.D +" , M= "+ this.M +" , ano= "+ this.ano +"]";
+                        throw new DException();
+                    }
+                }
+            }
+          
+            public static void main(String [] args)throws DateException, AnoException {
+            Date alimport java.lang.Exception;
+
+            public class AnoException extends Exception{
+          
+            public AnoException() {
