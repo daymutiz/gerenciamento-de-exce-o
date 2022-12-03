@@ -1,0 +1,9 @@
+package Exception;
+
+import java.lang.Exception;
+
+public class AnoBException extends Exception{
+  
+          
+           public AnoBException() {
+                System.out.println("o ano apresentado noo e bissexto");
