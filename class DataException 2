@@ -1,0 +1,11 @@
+package Exception;
+
+import java.lang.Exception;
+
+private int D, M;
+            private int ano;
+            private boolean dcs = false;
+          
+            private int finaldia[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+            public void setAno(int ano) throws DateException, AnoException {
