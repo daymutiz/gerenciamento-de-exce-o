@@ -1,0 +1,31 @@
+package Exception;
+
+import java.lang.Exception;
+
+public class DateException extends Exception {
+
+    public DataeException() {
+        System.out.println("o numero que foi escrito esta fora do intervalo");
+        }
+    
+        public DateException(String message) {
+        super(message);
+        }
+    
+        public DateException(String message, Throwable cause) {
+        super(message, cause);
+        }
+    
+        public DateException(Throwable cause) {
+        super(cause);
+        }
+    
+        public DateException(String message, Throwable cause, 
+        boolean enableSuppression, 
+        boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
+        }
+        
+    }
+    
+    }
